@@ -8,6 +8,16 @@ body {
     background-color: #d9dcd6;
 }
 
+@media (max-width: 1024px) {
+    ul li a {
+        font-size: 0.85em;
+    }
+
+    .header nav ul li {
+        margin: 5px;
+    }
+}
+
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
