@@ -31,6 +31,7 @@ header h1 {
     font-size: 48px;
 }
 
+/* found out this is how they made the 'seo' in 'horiseon' a different color since span is an in-line tag instead of block */
 header h1 .seo {
     color: #d9dcd6;
 }
@@ -86,6 +87,7 @@ p {
     margin-left: 20px;
 }
 
+/* found no adjustments to make */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -97,56 +99,28 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* removed unneeded classes, combined into benefits, applied article semantic correction */
+.benefits article {
     margin-bottom: 32px;
     color: #ffffff;
+    text-align: center;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* removed unneeded classes, combined into benefits h3 */
+.benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* adjusted to conslidated class */
+.benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-/* height auto adjustment to fix scaling problems */
-.search-engine-optimization {
+/* height auto adjustment to fix scaling problems, consolidated classes */
+.content-sections {
     margin-bottom: 20px;
     padding: 50px;
     height: auto;
@@ -156,54 +130,14 @@ p {
     color: #ffffff;
 }
 
-/* height auto adjustment to fix scaling problems */
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: auto;
-    min-height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/* height auto adjustment to fix scaling problems */
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: auto;
-    min-height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/* conslidated classes */
+.content-sections img {
     max-height: 200px;
     size: auto;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-    size: auto;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-    size: auto;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
+/* consolidated classes */
+.content-sections h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
